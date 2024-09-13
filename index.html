@@ -4,34 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IPFS Chatbot Demo</title>
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Check out my IPFS Input-Output Demo!">
-    <meta name="twitter:description" content="An interactive demo hosted on IPFS. Click to try it out!">
-    <meta name="twitter:image" content="https://your-preview-image-url.jpg">
-    <style>
-        body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; }
-        iframe { width: 100%; height: 100%; border: none; }
-    </style>
-</head>
-<body>
-    <iframe id="chatbot-frame" src="" allowfullscreen></iframe>
-    <script>
-        window.onload = function() {
-            const params = new URLSearchParams(window.location.search);
-            const ipfsHash = params.get('ipfs');
-            if (ipfsHash) {
-                document.getElementById('chatbot-frame').src = `https://gateway.pinata.cloud/ipfs/${ipfsHash}`;
-            }
-        }
-    </script>
-</body>
-</html>
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IPFS Chatbot Demo</title>
     <style>
         body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; }
         iframe { width: 100%; height: 100%; border: none; }
@@ -48,4 +20,4 @@
     </script>
 </body>
 </html>
- -->
+
